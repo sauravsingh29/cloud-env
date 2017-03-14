@@ -1,11 +1,10 @@
----
 applications:
-  - name: cloud-env
-  - instances: 2
-  - host: cloud-env-${random-word}
-  - domain: cfapps.io
-  - path: target/cloud-env-1.00.0-SNAPSHOT.jar
-  - services:
-      - postgres-service
-  - env:
-      SPRING_PROFILES_DEFAULT: cloud
+- name: cloud-env
+  instances: 1
+  host: cloud-env-${random-word}
+  domain: cfapps.io
+  path: target/cloud-env-1.00.0-SNAPSHOT.jar
+  services:
+    - postgres-service
+  env:
+    SPRING_PROFILES_DEFAULT: cloud
