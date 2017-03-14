@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: spring-cloud-env
+  - name: cloud-env
   - instances: 2
   - host: cloud-env-${random-word}
   - domain: cfapps.io
