@@ -1,6 +1,7 @@
 applications:
 - name: cloud-env
   instances: 1
+  memory: 512M
   host: cloud-env-${random-word}
   domain: cfapps.io
   path: target/cloud-env-1.00.0-SNAPSHOT.jar
