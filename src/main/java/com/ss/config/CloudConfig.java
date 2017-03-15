@@ -23,7 +23,7 @@ public class CloudConfig extends AbstractCloudConfig {
 		return cloud().getApplicationInstanceInfo();
 	}
 	
-	@Bean
+	@Bean(name = "clouddb")
 	public DataSource dataSource(){
 		return connectionFactory().dataSource();
 	}
